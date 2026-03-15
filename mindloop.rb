@@ -11,7 +11,7 @@ class Mindloop < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/snehmatic/mindloop/releases/download/v1.6.0/mindloop_Darwin_x86_64.tar.gz"
-      sha256 "0e5de07353f624f671835d4e9b4465e751a3d38a1923c866c2107402b3c3d4bb"
+      sha256 "46f803eeec11ae71ad130b780495df9681aa856be307c00dd86d648eb74d209e"
 
       define_method(:install) do
         bin.install "mindloop"
@@ -19,7 +19,7 @@ class Mindloop < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/snehmatic/mindloop/releases/download/v1.6.0/mindloop_Darwin_arm64.tar.gz"
-      sha256 "eb57fd12ec85c7a2db9126c6d9212cb0354d36b9896afc7ded905b41519b483b"
+      sha256 "db86934d8ee48f9d6a1ad888791cfa9fcb446741a2f6b2cee04f7b5b1f2a9e46"
 
       define_method(:install) do
         bin.install "mindloop"
@@ -30,14 +30,14 @@ class Mindloop < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/snehmatic/mindloop/releases/download/v1.6.0/mindloop_Linux_x86_64.tar.gz"
-      sha256 "c2817c84ded32b86424173e6a796f4a1c8ebdf766d800015f41232dfca90d8e1"
+      sha256 "eee2f947efe5965d4337dcc7c03d601bb31e4bf4aea5402eb6844b9c121277bd"
       define_method(:install) do
         bin.install "mindloop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/snehmatic/mindloop/releases/download/v1.6.0/mindloop_Linux_arm64.tar.gz"
-      sha256 "ad22e80f4ea5b039e085e282ee0eff97434b0d99a3a22e2d7f4ce6a6ee37ca86"
+      sha256 "925d19b3126203ddd50892af836311a21b7f33abcf1222f5af6c939f0d1d07b4"
       define_method(:install) do
         bin.install "mindloop"
       end
