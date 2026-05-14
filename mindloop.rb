@@ -5,21 +5,21 @@
 class Mindloop < Formula
   desc "Mindloop is a comprehensive productivity suite designed for local-first workflow management."
   homepage "https://github.com/snehmatic/mindloop"
-  version "1.10.0"
+  version "1.10.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/snehmatic/mindloop/releases/download/v1.10.0/mindloop_Darwin_x86_64.tar.gz"
-      sha256 "b82c0eabe8b472103dbeaaf191629512283290c0cde5ad705c1af21d147958f4"
+      url "https://github.com/snehmatic/mindloop/releases/download/v1.10.1/mindloop_Darwin_x86_64.tar.gz"
+      sha256 "4e1b95d96000a779c0a8b3dac1b90197907eab2a013cbfff6b4fd20ddef8764b"
 
       define_method(:install) do
         bin.install "mindloop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/snehmatic/mindloop/releases/download/v1.10.0/mindloop_Darwin_arm64.tar.gz"
-      sha256 "932d3f715268539b5326d57dc036565ab792eb2af00fccefd1c7f2e009be8397"
+      url "https://github.com/snehmatic/mindloop/releases/download/v1.10.1/mindloop_Darwin_arm64.tar.gz"
+      sha256 "d48861d6df161cde3b3b6cd695e0753c731e896afe52ad8decf30cda03a8cbd9"
 
       define_method(:install) do
         bin.install "mindloop"
@@ -29,15 +29,15 @@ class Mindloop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/snehmatic/mindloop/releases/download/v1.10.0/mindloop_Linux_x86_64.tar.gz"
-      sha256 "7455e1f0f93f68d95bad004641bfd5eefa4b687dfb79da5172a7aa6513ebc91f"
+      url "https://github.com/snehmatic/mindloop/releases/download/v1.10.1/mindloop_Linux_x86_64.tar.gz"
+      sha256 "806fc46a9b90fa64c98b61c4b2bcfff8a9a222ce69892e7c2b9bd9d4c0bdb5b1"
       define_method(:install) do
         bin.install "mindloop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/snehmatic/mindloop/releases/download/v1.10.0/mindloop_Linux_arm64.tar.gz"
-      sha256 "dc2c34b0352f5395ea263d0d85a86fa05d620eae0797c6773e44240a19835b8b"
+      url "https://github.com/snehmatic/mindloop/releases/download/v1.10.1/mindloop_Linux_arm64.tar.gz"
+      sha256 "1e61f2977cd756ad75ad0edf30e0a0c4d8f2aeefddbd50f46bc47d7d0ed59b8b"
       define_method(:install) do
         bin.install "mindloop"
       end
